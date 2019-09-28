@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banking">
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="智能垃圾回收系统"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/tv_1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/username1"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="2dp"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/username"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/username1"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16dp" />
+    <!--<com.dd.processbutton.iml.ActionProcessButton-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="50dp" />-->
+    <Button
+        android:id="@+id/mylogin"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/username1"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    <CheckBox
+        android:id="@+id/cb_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mylogin"
+        android:layout_marginLeft="-20dp"
+        android:text="自动登录"
+        android:layout_toRightOf="@id/mylogin"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:id="@+id/cb_mima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_auto"
+        android:layout_alignLeft="@id/cb_auto"
+        android:text="记住密码"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mylogin"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="还没有账号？立即注册"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

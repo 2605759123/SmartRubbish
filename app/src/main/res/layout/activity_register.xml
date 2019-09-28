@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/banking"
+    >
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="注册账号"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/tv_2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/username1"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="2dp"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/username2"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/username1"
+        android:drawableLeft="@drawable/ic_lock"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="#FFFFFF"
+
+        android:textColorHint="#FFFFFF"
+        android:textSize="16dp" />
+
+
+
+    <Button
+        android:id="@+id/mylogin2"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/password2"
+        android:layout_marginLeft="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/username1"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/SignIn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mylogin2"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="登陆"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

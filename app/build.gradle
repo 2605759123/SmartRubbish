@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '28.0.2'
+
+    defaultConfig {
+        applicationId "com.bzu.gxs.smartrubbish"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+//            jni.srcDirs = []    //disable automatic ndk-build
+        }
+    }
+
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation files('libs/hellocharts-library-1.5.8.jar')
+    implementation files('libs/httpclient-4.1.3.jar')
+    implementation files('libs/httpcore-4.1.4.jar')
+    implementation 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
+    implementation 'org.raphets:roundimageview:1.2.0'
+    implementation 'com.github.Idtk:SmallChart:v0.1.1'
+    //图表
+    //    androidTestImplementation ('com.android.support.test.espresso: espresso-core: 2.2.2', {
+    //        exclude group: 'com.android.support',  module: 'support-annotations'
+    //    })
+    implementation project(':searchview')
+}
