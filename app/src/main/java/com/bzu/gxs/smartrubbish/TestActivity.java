@@ -14,7 +14,7 @@ import com.bzu.gxs.smartrubbish.views.MyTextView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//test
 public class TestActivity extends AppCompatActivity {
 
     @Override
